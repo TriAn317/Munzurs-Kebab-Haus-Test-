@@ -5,11 +5,11 @@
 
 :root{
   /* colour */
-  --ink:        #1b1712;
-  --ink-2:      #251f18;
-  --ink-3:      #322a20;
-  --cream:      #f7f0e3;
-  --cream-dim:  #d8cdb8;
+  --ink:        #2e2820;
+  --ink-2:      #3a3226;
+  --ink-3:      #473d2d;
+  --cream:      #fbf5ea;
+  --cream-dim:  #e4d9c3;
   --ember:      #d5401f;
   --ember-dim:  #9c2c15;
   --gold:       #e3a53a;
@@ -228,14 +228,18 @@ nav.main-nav a.active::after{
 }
 .meat-wrap{
   transform-origin: 110px 170px;
-  animation: spinMeat 6s linear infinite;
+  animation: spinMeat 7s ease-in-out infinite;
 }
 @keyframes spinMeat{
-  0%   { transform: scaleX(1); }
-  25%  { transform: scaleX(0.18); }
-  50%  { transform: scaleX(1); }
-  75%  { transform: scaleX(0.18); }
-  100% { transform: scaleX(1); }
+  0%    { transform: scaleX(1); }
+  12.5% { transform: scaleX(0.9); }
+  25%   { transform: scaleX(0.62); }
+  37.5% { transform: scaleX(0.9); }
+  50%   { transform: scaleX(1); }
+  62.5% { transform: scaleX(0.9); }
+  75%   { transform: scaleX(0.62); }
+  87.5% { transform: scaleX(0.9); }
+  100%  { transform: scaleX(1); }
 }
 .ember-glow{
   position:absolute;
